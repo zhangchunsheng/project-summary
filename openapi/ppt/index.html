@@ -47,6 +47,7 @@
         <li>ios5.2.2</li>
         <li>联通大器</li>
         <li>ios5.2.3</li>
+        <li>海外开城</li>
         <li>问题小结</li>
         <li>Q3计划</li>
     </ul>
@@ -58,7 +59,14 @@
         ios5.2.1
     </h3>
     <p>
-
+        主要实现功能包括
+        <ul>
+            <li>下单时m+n接口，下单等待动画；</li>
+            <li>决策司机接单接口更改为增量返回；</li>
+            <li>司机位置动画，待就位车辆每次返回两个点；</li>
+            <li>增加获取语音验证码接口；</li>
+            <li>语音增加查询次数接口</li>
+        </ul>
     </p>
 </article>
 
@@ -67,7 +75,13 @@
         ios5.2.2
     </h3>
     <p>
-
+        <ul>
+            <li>等待司机接单动画接口增加司机头像信息；</li>
+            <li>已收藏司机列表、司机信息、司机专题、司机接单列表接口增加香薰车字段；</li>
+            <li>海外开城，航班查询等接口增加时区信息；</li>
+            <li>增加取消订单原因接口；</li>
+            <li>增加封面引导图生效时间</li>
+        </ul>
     </p>
 </article>
 
@@ -76,7 +90,11 @@
         联通大器
     </h3>
     <p>
-
+        <ul>
+            <li>记录设备信息；</li>
+            <li>增加联通大器校验方法；</li>
+            <li>一台设备只送一次优惠券</li>
+        </ul>
     </p>
 </article>
 
@@ -85,11 +103,33 @@
         ios5.2.3
     </h3>
     <p>
-
+        <ul>
+            <li>优惠券增加描述信息；</li>
+            <li>下单时显示所有优惠券信息；</li>
+            <li>司机卡片增加近30天服务次数、可乘人数、性别字段；</li>
+            <li>增加登录短信验证功能；</li>
+            <li>更改半日租提示；</li>
+            <li>调整车型库取数语句；</li>
+            <li>一台设备只送一次优惠券；</li>
+            <li>增加all price校验</li>
+        </ul>
     </p>
 </article>
 
 <article>
+    <h3>
+        海外开城
+    </h3>
+    <p>
+        <ul>
+            <li>添加城市时区信息</li>
+            <li>访问谷歌地图服务</li>
+            <li>申请了Google Maps API for Business</li>
+        </ul>
+    </p>
+</article>
+
+<article class="smaller">
     <h3>
         问题小结
     </h3>
@@ -100,7 +140,7 @@
             <li>第二次出现发生在今天，导致不能注册，由于user_device缺少 weidao_device_id，is_sms_valid字段，而 创建该表的语句也在backend/docs /database/yc_core-20140516-zhangchunsheng.sql脚本 中，第一次出现错误时， 当时只改了user_register_device表结构，而忽略了backend/docs/database /yc_core-20140516-zhangchunsheng.sql中的其它脚本语句，这是我的疏忽。</li>
         </ul>
         <pre>
-            以后在更改数据库时会注意相关问题，即使确认线上数据库表结构
+以后在更改数据库时会注意相关问题，即使确认线上数据库表结构
         </pre>
     </p>
 </article>
