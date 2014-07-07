@@ -48,6 +48,7 @@
         <li>联通大器</li>
         <li>ios5.2.3</li>
         <li>问题小结</li>
+        <li>Q3计划</li>
     </ul>
     </p>
 </article>
@@ -58,6 +59,61 @@
     </h3>
     <p>
 
+    </p>
+</article>
+
+<article>
+    <h3>
+        ios5.2.2
+    </h3>
+    <p>
+
+    </p>
+</article>
+
+<article>
+    <h3>
+        联通大器
+    </h3>
+    <p>
+
+    </p>
+</article>
+
+<article>
+    <h3>
+        ios5.2.3
+    </h3>
+    <p>
+
+    </p>
+</article>
+
+<article>
+    <h3>
+        问题小结
+    </h3>
+    <p>
+        数据库结构错误
+        <ul>
+            <li>第一次出现错误，由于backend/docs/database/yc_core-20140516- zhangchunsheng.sql脚本执行时使用的是master分支下的程序，而最新的脚本在 dev下面，导致不能注册，当时修改了 user_register_device表结构添加了 create_time字段。</li>
+            <li>第二次出现发生在今天，导致不能注册，由于user_device缺少 weidao_device_id，is_sms_valid字段，而 创建该表的语句也在backend/docs /database/yc_core-20140516-zhangchunsheng.sql脚本 中，第一次出现错误时， 当时只改了user_register_device表结构，而忽略了backend/docs/database /yc_core-20140516-zhangchunsheng.sql中的其它脚本语句，这是我的疏忽。</li>
+        </ul>
+        <pre>
+            以后在更改数据库时会注意相关问题，即使确认线上数据库表结构
+        </pre>
+    </p>
+</article>
+
+<article>
+    <h3>
+        Q3计划
+    </h3>
+    <p>
+        <ul>
+            <li>拆分openapi与YOP</li>
+            <li>当面付</li>
+        </ul>
     </p>
 </article>
 
